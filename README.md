@@ -98,6 +98,9 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 
 
 ## Deploy the application
+
+Code is hosted in github. The codebuild will use the dockerfile in there to create an image and pusth it to the ECR repo. We can then use the image in our deployments in EKS.
+
 The configmap.yaml needs to be applied and the secret needs to be created (from lateral).
 Then we can deploy by applying the deployment.yaml in the cluster
 
